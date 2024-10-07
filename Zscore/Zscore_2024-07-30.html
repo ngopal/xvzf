@@ -1,9 +1,14 @@
-<table border="1" class="dataframe">
+2024-07-30 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>0</th>
-      <th>1</th>
+      <th>Ticker</th>
+      <th>Z Score</th>
+      <th>Average Volume</th>
+      <th>Analyst Recommendation</th>
+      <th>AccumulationScore</th>
+      <th>AboveAvgVolumeScore</th>
+      <th>RSI</th>
     </tr>
   </thead>
   <tbody>
@@ -11,166 +16,438 @@
       <th>18</th>
       <td>MS</td>
       <td>-1.594428</td>
+      <td>6.169248e+06</td>
+      <td>4</td>
+      <td>-31159800.0</td>
+      <td>-37784200.0</td>
+      <td>50.851313</td>
     </tr>
     <tr>
       <th>27</th>
       <td>COO</td>
       <td>-1.324565</td>
+      <td>1.136832e+06</td>
+      <td>4</td>
+      <td>1974000.0</td>
+      <td>1064900.0</td>
+      <td>73.242185</td>
     </tr>
     <tr>
       <th>21</th>
       <td>OXY</td>
       <td>-1.266087</td>
+      <td>1.163430e+07</td>
+      <td>2</td>
+      <td>-25351800.0</td>
+      <td>-19775100.0</td>
+      <td>42.359252</td>
     </tr>
     <tr>
       <th>19</th>
       <td>NCLH</td>
       <td>-1.166713</td>
+      <td>1.295884e+07</td>
+      <td>3</td>
+      <td>-25956500.0</td>
+      <td>-537600.0</td>
+      <td>48.169552</td>
     </tr>
     <tr>
       <th>20</th>
       <td>NUE</td>
       <td>-1.153207</td>
+      <td>1.470598e+06</td>
+      <td>2</td>
+      <td>3364200.0</td>
+      <td>-1905200.0</td>
+      <td>58.258496</td>
     </tr>
     <tr>
       <th>9</th>
       <td>BEN</td>
       <td>-1.133241</td>
+      <td>4.714032e+06</td>
+      <td>0</td>
+      <td>-19043600.0</td>
+      <td>-6866000.0</td>
+      <td>53.781499</td>
     </tr>
     <tr>
       <th>24</th>
       <td>RJF</td>
       <td>-1.098178</td>
+      <td>1.315043e+06</td>
+      <td>4</td>
+      <td>-1100900.0</td>
+      <td>-113200.0</td>
+      <td>41.698993</td>
     </tr>
     <tr>
       <th>15</th>
       <td>MRO</td>
       <td>-1.032873</td>
+      <td>5.646838e+06</td>
+      <td>5</td>
+      <td>-929800.0</td>
+      <td>0.0</td>
+      <td>42.613623</td>
     </tr>
     <tr>
       <th>10</th>
       <td>IVZ</td>
       <td>-0.957208</td>
+      <td>3.875278e+06</td>
+      <td>2</td>
+      <td>2975600.0</td>
+      <td>14203800.0</td>
+      <td>72.171246</td>
     </tr>
     <tr>
       <th>7</th>
       <td>DVN</td>
       <td>-0.948618</td>
+      <td>7.274515e+06</td>
+      <td>10</td>
+      <td>-8658500.0</td>
+      <td>-6678400.0</td>
+      <td>51.688301</td>
     </tr>
     <tr>
       <th>5</th>
       <td>CCL</td>
       <td>-0.939994</td>
+      <td>2.763204e+07</td>
+      <td>5</td>
+      <td>-70602100.0</td>
+      <td>862600.0</td>
+      <td>44.363646</td>
     </tr>
     <tr>
       <th>14</th>
       <td>MTB</td>
       <td>-0.929690</td>
+      <td>1.003482e+06</td>
+      <td>2</td>
+      <td>119000.0</td>
+      <td>154800.0</td>
+      <td>83.265408</td>
     </tr>
     <tr>
       <th>22</th>
       <td>PEP</td>
       <td>-0.928286</td>
+      <td>5.423502e+06</td>
+      <td>5</td>
+      <td>19274600.0</td>
+      <td>13471600.0</td>
+      <td>70.966300</td>
     </tr>
     <tr>
       <th>8</th>
       <td>EOG</td>
       <td>-0.914685</td>
+      <td>3.197697e+06</td>
+      <td>7</td>
+      <td>-4598900.0</td>
+      <td>-6892300.0</td>
+      <td>49.834045</td>
     </tr>
     <tr>
       <th>4</th>
       <td>APA</td>
       <td>-0.908755</td>
+      <td>5.961020e+06</td>
+      <td>4</td>
+      <td>-21968900.0</td>
+      <td>-6462600.0</td>
+      <td>65.826329</td>
     </tr>
     <tr>
       <th>16</th>
       <td>TAP</td>
       <td>-0.877846</td>
+      <td>1.964478e+06</td>
+      <td>4</td>
+      <td>9152500.0</td>
+      <td>0.0</td>
+      <td>66.825197</td>
     </tr>
     <tr>
       <th>6</th>
       <td>COP</td>
       <td>-0.875771</td>
+      <td>6.799808e+06</td>
+      <td>5</td>
+      <td>-11839100.0</td>
+      <td>8192200.0</td>
+      <td>41.027408</td>
     </tr>
     <tr>
       <th>17</th>
       <td>MDLZ</td>
       <td>-0.851721</td>
+      <td>6.006003e+06</td>
+      <td>6</td>
+      <td>11819600.0</td>
+      <td>7721000.0</td>
+      <td>58.139540</td>
     </tr>
     <tr>
       <th>26</th>
       <td>ROK</td>
       <td>-0.845904</td>
+      <td>7.255117e+05</td>
+      <td>5</td>
+      <td>-594700.0</td>
+      <td>160500.0</td>
+      <td>55.473297</td>
     </tr>
     <tr>
       <th>2</th>
       <td>AKAM</td>
       <td>-0.821997</td>
+      <td>1.446767e+06</td>
+      <td>0</td>
+      <td>-1888500.0</td>
+      <td>0.0</td>
+      <td>68.336308</td>
     </tr>
     <tr>
       <th>3</th>
       <td>AMP</td>
       <td>-0.761577</td>
+      <td>4.851000e+05</td>
+      <td>3</td>
+      <td>8100.0</td>
+      <td>-72600.0</td>
+      <td>44.752967</td>
     </tr>
     <tr>
       <th>31</th>
       <td>WFC</td>
       <td>-0.753053</td>
+      <td>1.765264e+07</td>
+      <td>5</td>
+      <td>-37421300.0</td>
+      <td>0.0</td>
+      <td>51.104331</td>
     </tr>
     <tr>
       <th>25</th>
       <td>RF</td>
       <td>-0.730293</td>
+      <td>7.752567e+06</td>
+      <td>5</td>
+      <td>61096300.0</td>
+      <td>54958900.0</td>
+      <td>79.672907</td>
     </tr>
     <tr>
       <th>11</th>
       <td>KEY</td>
       <td>-0.727151</td>
+      <td>1.450466e+07</td>
+      <td>3</td>
+      <td>8361600.0</td>
+      <td>9040000.0</td>
+      <td>72.443202</td>
     </tr>
     <tr>
       <th>29</th>
       <td>UHS</td>
       <td>-0.718017</td>
+      <td>7.615700e+05</td>
+      <td>3</td>
+      <td>3316400.0</td>
+      <td>3340300.0</td>
+      <td>80.524497</td>
     </tr>
     <tr>
       <th>1</th>
       <td>AMG</td>
       <td>-0.679504</td>
+      <td>2.092933e+05</td>
+      <td>2</td>
+      <td>1196600.0</td>
+      <td>745600.0</td>
+      <td>82.195641</td>
     </tr>
     <tr>
       <th>23</th>
       <td>RRC</td>
       <td>-0.602172</td>
+      <td>2.073775e+06</td>
+      <td>3</td>
+      <td>-6220900.0</td>
+      <td>-8026600.0</td>
+      <td>34.826577</td>
     </tr>
     <tr>
       <th>30</th>
       <td>VRSN</td>
       <td>-0.597030</td>
+      <td>6.854383e+05</td>
+      <td>1</td>
+      <td>1145000.0</td>
+      <td>3043500.0</td>
+      <td>75.411839</td>
     </tr>
     <tr>
       <th>32</th>
       <td>XRX</td>
       <td>-0.594506</td>
+      <td>2.068545e+06</td>
+      <td>0</td>
+      <td>1806100.0</td>
+      <td>-216300.0</td>
+      <td>57.215185</td>
     </tr>
     <tr>
       <th>0</th>
       <td>AES</td>
       <td>-0.564572</td>
+      <td>8.298865e+06</td>
+      <td>1</td>
+      <td>-20502500.0</td>
+      <td>-3265700.0</td>
+      <td>46.737206</td>
     </tr>
     <tr>
       <th>28</th>
       <td>TSN</td>
       <td>-0.493821</td>
+      <td>2.128505e+06</td>
+      <td>4</td>
+      <td>5328100.0</td>
+      <td>0.0</td>
+      <td>80.939249</td>
     </tr>
     <tr>
       <th>13</th>
       <td>L</td>
       <td>-0.134042</td>
+      <td>6.313417e+05</td>
+      <td>1</td>
+      <td>910900.0</td>
+      <td>-162900.0</td>
+      <td>70.801040</td>
     </tr>
     <tr>
       <th>12</th>
       <td>LB</td>
       <td>-0.119125</td>
+      <td>3.375517e+05</td>
+      <td>0</td>
+      <td>309400.0</td>
+      <td>0.0</td>
+      <td>60.385851</td>
     </tr>
   </tbody>
-</table>
+</table><h2>Other Related Pages:</h2>
+<ul>
+<li><a href="Zscore_2024-10-06.html">Zscore_2024-10-06.html</a></li>
+<li><a href="Zscore_2024-10-05.html">Zscore_2024-10-05.html</a></li>
+<li><a href="Zscore_2024-10-04.html">Zscore_2024-10-04.html</a></li>
+<li><a href="Zscore_2024-10-03.html">Zscore_2024-10-03.html</a></li>
+<li><a href="Zscore_2024-10-02.html">Zscore_2024-10-02.html</a></li>
+<li><a href="Zscore_2024-10-01.html">Zscore_2024-10-01.html</a></li>
+<li><a href="Zscore_2024-09-30.html">Zscore_2024-09-30.html</a></li>
+<li><a href="Zscore_2024-09-29.html">Zscore_2024-09-29.html</a></li>
+<li><a href="Zscore_2024-09-28.html">Zscore_2024-09-28.html</a></li>
+<li><a href="Zscore_2024-09-27.html">Zscore_2024-09-27.html</a></li>
+<li><a href="Zscore_2024-09-26.html">Zscore_2024-09-26.html</a></li>
+<li><a href="Zscore_2024-09-25.html">Zscore_2024-09-25.html</a></li>
+<li><a href="Zscore_2024-09-24.html">Zscore_2024-09-24.html</a></li>
+<li><a href="Zscore_2024-09-23.html">Zscore_2024-09-23.html</a></li>
+<li><a href="Zscore_2024-09-22.html">Zscore_2024-09-22.html</a></li>
+<li><a href="Zscore_2024-09-21.html">Zscore_2024-09-21.html</a></li>
+<li><a href="Zscore_2024-09-20.html">Zscore_2024-09-20.html</a></li>
+<li><a href="Zscore_2024-09-19.html">Zscore_2024-09-19.html</a></li>
+<li><a href="Zscore_2024-09-18.html">Zscore_2024-09-18.html</a></li>
+<li><a href="Zscore_2024-09-17.html">Zscore_2024-09-17.html</a></li>
+<li><a href="Zscore_2024-09-16.html">Zscore_2024-09-16.html</a></li>
+<li><a href="Zscore_2024-09-15.html">Zscore_2024-09-15.html</a></li>
+<li><a href="Zscore_2024-09-14.html">Zscore_2024-09-14.html</a></li>
+<li><a href="Zscore_2024-09-13.html">Zscore_2024-09-13.html</a></li>
+<li><a href="Zscore_2024-09-12.html">Zscore_2024-09-12.html</a></li>
+<li><a href="Zscore_2024-09-11.html">Zscore_2024-09-11.html</a></li>
+<li><a href="Zscore_2024-09-10.html">Zscore_2024-09-10.html</a></li>
+<li><a href="Zscore_2024-09-09.html">Zscore_2024-09-09.html</a></li>
+<li><a href="Zscore_2024-09-08.html">Zscore_2024-09-08.html</a></li>
+<li><a href="Zscore_2024-09-07.html">Zscore_2024-09-07.html</a></li>
+<li><a href="Zscore_2024-09-06.html">Zscore_2024-09-06.html</a></li>
+<li><a href="Zscore_2024-09-05.html">Zscore_2024-09-05.html</a></li>
+<li><a href="Zscore_2024-09-04.html">Zscore_2024-09-04.html</a></li>
+<li><a href="Zscore_2024-09-03.html">Zscore_2024-09-03.html</a></li>
+<li><a href="Zscore_2024-09-02.html">Zscore_2024-09-02.html</a></li>
+<li><a href="Zscore_2024-09-01.html">Zscore_2024-09-01.html</a></li>
+<li><a href="Zscore_2024-08-31.html">Zscore_2024-08-31.html</a></li>
+<li><a href="Zscore_2024-08-30.html">Zscore_2024-08-30.html</a></li>
+<li><a href="Zscore_2024-08-29.html">Zscore_2024-08-29.html</a></li>
+<li><a href="Zscore_2024-08-28.html">Zscore_2024-08-28.html</a></li>
+<li><a href="Zscore_2024-08-27.html">Zscore_2024-08-27.html</a></li>
+<li><a href="Zscore_2024-08-26.html">Zscore_2024-08-26.html</a></li>
+<li><a href="Zscore_2024-08-25.html">Zscore_2024-08-25.html</a></li>
+<li><a href="Zscore_2024-08-24.html">Zscore_2024-08-24.html</a></li>
+<li><a href="Zscore_2024-08-23.html">Zscore_2024-08-23.html</a></li>
+<li><a href="Zscore_2024-08-22.html">Zscore_2024-08-22.html</a></li>
+<li><a href="Zscore_2024-08-21.html">Zscore_2024-08-21.html</a></li>
+<li><a href="Zscore_2024-08-20.html">Zscore_2024-08-20.html</a></li>
+<li><a href="Zscore_2024-08-19.html">Zscore_2024-08-19.html</a></li>
+<li><a href="Zscore_2024-08-18.html">Zscore_2024-08-18.html</a></li>
+<li><a href="Zscore_2024-08-17.html">Zscore_2024-08-17.html</a></li>
+<li><a href="Zscore_2024-08-16.html">Zscore_2024-08-16.html</a></li>
+<li><a href="Zscore_2024-08-15.html">Zscore_2024-08-15.html</a></li>
+<li><a href="Zscore_2024-08-14.html">Zscore_2024-08-14.html</a></li>
+<li><a href="Zscore_2024-08-13.html">Zscore_2024-08-13.html</a></li>
+<li><a href="Zscore_2024-08-12.html">Zscore_2024-08-12.html</a></li>
+<li><a href="Zscore_2024-08-11.html">Zscore_2024-08-11.html</a></li>
+<li><a href="Zscore_2024-08-10.html">Zscore_2024-08-10.html</a></li>
+<li><a href="Zscore_2024-08-09.html">Zscore_2024-08-09.html</a></li>
+<li><a href="Zscore_2024-08-08.html">Zscore_2024-08-08.html</a></li>
+<li><a href="Zscore_2024-08-07.html">Zscore_2024-08-07.html</a></li>
+<li><a href="Zscore_2024-08-06.html">Zscore_2024-08-06.html</a></li>
+<li><a href="Zscore_2024-08-05.html">Zscore_2024-08-05.html</a></li>
+<li><a href="Zscore_2024-08-04.html">Zscore_2024-08-04.html</a></li>
+<li><a href="Zscore_2024-08-03.html">Zscore_2024-08-03.html</a></li>
+<li><a href="Zscore_2024-08-02.html">Zscore_2024-08-02.html</a></li>
+<li><a href="Zscore_2024-08-01.html">Zscore_2024-08-01.html</a></li>
+<li><a href="Zscore_2024-07-31.html">Zscore_2024-07-31.html</a></li>
+<li><a href="Zscore_2024-07-30.html">Zscore_2024-07-30.html</a></li>
+<li><a href="Zscore_2024-07-29.html">Zscore_2024-07-29.html</a></li>
+<li><a href="Zscore_2024-07-28.html">Zscore_2024-07-28.html</a></li>
+<li><a href="Zscore_2024-07-27.html">Zscore_2024-07-27.html</a></li>
+<li><a href="Zscore_2024-07-26.html">Zscore_2024-07-26.html</a></li>
+<li><a href="Zscore_2024-07-25.html">Zscore_2024-07-25.html</a></li>
+<li><a href="Zscore_2024-07-24.html">Zscore_2024-07-24.html</a></li>
+<li><a href="Zscore_2024-07-23.html">Zscore_2024-07-23.html</a></li>
+<li><a href="Zscore_2024-07-22.html">Zscore_2024-07-22.html</a></li>
+<li><a href="Zscore_2024-07-21.html">Zscore_2024-07-21.html</a></li>
+<li><a href="Zscore_2024-07-20.html">Zscore_2024-07-20.html</a></li>
+<li><a href="Zscore_2024-07-19.html">Zscore_2024-07-19.html</a></li>
+<li><a href="Zscore_2024-07-18.html">Zscore_2024-07-18.html</a></li>
+<li><a href="Zscore_2024-07-17.html">Zscore_2024-07-17.html</a></li>
+<li><a href="Zscore_2024-07-16.html">Zscore_2024-07-16.html</a></li>
+<li><a href="Zscore_2024-07-15.html">Zscore_2024-07-15.html</a></li>
+<li><a href="Zscore_2024-07-14.html">Zscore_2024-07-14.html</a></li>
+<li><a href="Zscore_2024-07-13.html">Zscore_2024-07-13.html</a></li>
+<li><a href="Zscore_2024-07-12.html">Zscore_2024-07-12.html</a></li>
+<li><a href="Zscore_2024-07-11.html">Zscore_2024-07-11.html</a></li>
+<li><a href="Zscore_2024-07-10.html">Zscore_2024-07-10.html</a></li>
+<li><a href="Zscore_2024-07-09.html">Zscore_2024-07-09.html</a></li>
+<li><a href="Zscore_2024-07-08.html">Zscore_2024-07-08.html</a></li>
+<li><a href="Zscore_2024-07-07.html">Zscore_2024-07-07.html</a></li>
+<li><a href="Zscore_2024-07-06.html">Zscore_2024-07-06.html</a></li>
+<li><a href="Zscore_2024-07-05.html">Zscore_2024-07-05.html</a></li>
+<li><a href="Zscore_2024-07-04.html">Zscore_2024-07-04.html</a></li>
+<li><a href="Zscore_2024-07-03.html">Zscore_2024-07-03.html</a></li>
+<li><a href="Zscore_2024-07-02.html">Zscore_2024-07-02.html</a></li>
+<li><a href="Zscore_2024-07-01.html">Zscore_2024-07-01.html</a></li>
+<li><a href="Zscore_2024-06-30.html">Zscore_2024-06-30.html</a></li>
+<li><a href="Zscore_2024-06-29.html">Zscore_2024-06-29.html</a></li>
+<li><a href="Zscore_2024-06-28.html">Zscore_2024-06-28.html</a></li>
+<li><a href="Zscore_2024-06-27.html">Zscore_2024-06-27.html</a></li>
+<li><a href="Zscore_2024-06-26.html">Zscore_2024-06-26.html</a></li>
+<li><a href="Zscore_2024-06-25.html">Zscore_2024-06-25.html</a></li>
+<li><a href="Zscore_2024-06-24.html">Zscore_2024-06-24.html</a></li>
+</ul>
